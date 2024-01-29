@@ -17,14 +17,6 @@ This Android app displays sports results using Clean Architecture, Jetpack Compo
 ### Retrofit
 - **Networking:** Retrofit is used to make API calls to retrieve sports results from remote servers.
 
-### JUnit 5
-- **Unit Testing:** JUnit 5 is used for writing unit tests to ensure the reliability of individual components.
-
-### Espresso
-- **UI Testing:** Espresso is utilized for UI testing to ensure the correct behavior of UI components.
-
-## Important Code Portions to Review
-
 - **JUnit 5 Tests:** Check the unit tests for critical business logic and use cases. The `./gradlew clean test` command generates a unit test report.
 
   <img width="403" alt="Screenshot 2024-01-29 at 5 34 16 PM" src="https://github.com/kaustubhkp/SportResults/assets/15397741/a325737b-09cc-4881-8b37-ee8bb899863c">
@@ -41,4 +33,4 @@ This Android app displays sports results using Clean Architecture, Jetpack Compo
 
 ## Additional Notes
 
-This project is a continuous work-in-progress. Your feedback and suggestions for improvement are highly appreciated. Thank you for reviewing my work!
+Your feedback and suggestions for improvement are highly appreciated. Thank you for reviewing my work!
