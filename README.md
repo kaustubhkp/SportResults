@@ -2,9 +2,21 @@
 
 This Android app displays sports results using Clean Architecture, Jetpack Compose for UI, Hilt for dependency injection, Retrofit for API calls, JUnit 5 for unit tests, and Espresso for UI tests.
 
-![User 1](https://github.com/kaustubhkp/SportResults/assets/15397741/3ae5e86f-64c0-402e-beee-5cffca32bb5c) | ![User 2](https://github.com/kaustubhkp/SportResults/assets/15397741/07f20f8e-e724-46c7-bff4-79c60625343e)
-|:---:|:---:|
+<img src="https://github.com/kaustubhkp/SportResults/assets/15397741/3ae5e86f-64c0-402e-beee-5cffca32bb5c" width="200" height="400">
 
+<img src="https://github.com/kaustubhkp/SportResults/assets/15397741/07f20f8e-e724-46c7-bff4-79c60625343e" width="200" height="400">
+
+
+
+## Design decisions and Assumptions
+
+I had a tight deadline of 2-3 days for the assignment, so I made some decisions to work efficiently. I chose Clean Architecture because I'm familiar with it and it helps keep the code organized.
+
+I identified parsing the server response as crucial. I went with the standard Android method of defining model classes and using the Gson library for parsing. However, this approach has a limitation – if the server adds a new sport, the app would need modifications.
+
+To address this, I considered creating a custom utility to parse JSON strings and display data. This way, the app could dynamically handle new sports without requiring changes. Due to time constraints, I opted not to create this utility and stuck with the standard approach using Gson.
+
+Despite this, I designed the model classes to minimize changes on the app side when the server introduces new sports or modifications. The goal was to ensure that the app remains extendable with minimal future adjustments.
 
 ## Dependencies and Reasoning
 
