@@ -27,10 +27,4 @@ object Utils {
     fun getStringTime(date : String): String{
         return  SimpleDateFormat("hh:mm aa", Locale.getDefault()).format(getDateObjectFromString(date))
     }
-
-    val dateComparator = Comparator<String> { dateString, nextDateString -> //            if(dateString == "No Date"){
-        val date = Utils.getDateFromString(dateString)
-        val nextDate = Utils.getDateFromString(nextDateString)
-        date.compareTo(nextDate) * -1
-    }
 }

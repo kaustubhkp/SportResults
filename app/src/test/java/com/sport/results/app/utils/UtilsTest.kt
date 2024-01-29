@@ -41,12 +41,4 @@ class UtilsTest {
         val actualTimeString = Utils.getStringTime(dateString)
         assertEquals(expectedTimeString, actualTimeString)
     }
-
-    @Test
-    fun testDateComparator() {
-        val dateString1 = "2022-01-27"
-        val dateString2 = "2022-01-28"
-        val result = Utils.dateComparator.compare(dateString1, dateString2)
-        assertEquals(1, result)
-    }
 }

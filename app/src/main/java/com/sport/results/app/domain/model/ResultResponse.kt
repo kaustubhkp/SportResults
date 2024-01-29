@@ -30,11 +30,7 @@ data class ResultResponse(
         processGames(nba, "NBA")
         processGames(tennis, "Tennis")
 
-        map.entries
-            .filter { it.key != "No Date" }
-            .forEach { it.value.sort() }
-
-        val firstEntry = map.toSortedMap(Utils.dateComparator).entries.first()
+        val firstEntry = map.toMutableMap().entries.first()
 
         return mapOf(firstEntry.key to firstEntry.value)
     }
